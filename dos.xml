@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<biblioteca>
+
+<libro>
+	<tituto>De chica a chica</tituto>
+	<autor>Terence B</autor>
+	<isbn>65196418564685</isbn>
+	<infoAdicional>
+		<nPag>233</nPag>
+		<nEdicion>2</nEdicion>
+		<idioma>Español</idioma>
+		<editorial codED= "342">El Barco de Vapor</editorial>
+	</infoAdicional>
+	<prestamo lector = "5497">
+		<fechaPre dia = "" mes = "" anio = ""></fechaPre>
+		<fechaDev></fechaDev>
+	</prestamo>
+</libro>
+
+</biblioteca>

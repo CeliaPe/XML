@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<usuario 
+	xmlns:xsi="C:\Users\Desktop\Celia\LM\XML\cinco.xml"
+	xsi:noNamespaceSchemaLocation="cinco.xsd">
+	<nombre>Celia</nombre>
+	<apellido>Pedregosa</apellido>
+	<edad>26</edad>
+	<contrasena>123698745</contrasena>
+</usuario>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+
+<xs:schema 
+	xmlns:xs="C:\Users\Desktop\Celia\LM\XML\cinco.xsd">
+	<xs:element name="usuario" type="Tusuario"/>
+	<xs:complexType name="Tusuario">
+		<xs:element name="nombre" type="xs:string"/>
+		<xs:element name="apellido" type="xs:string"/>
+		<xs:element name="edad" type="xs:integer"/>
+		<xs:element name="contrasena" type="xs:string"/>
+	</xs:complexType>
+</xs:schema>
