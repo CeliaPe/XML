@@ -6,5 +6,8 @@
 	<nombre>Celia</nombre>
 	<apellido>Pedregosa</apellido>
 	<edad>26</edad>
+	<color>azul</color>
+	<letra>A</letra>
 	<contrasena>123698745</contrasena>
+
 </usuario>
