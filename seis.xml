@@ -1,0 +1,15 @@
+<?xml version= "1.0" encoding="UTF-8"?>
+<datos xmlns:xsi="C:\Users\Usuario\Desktop\Celia\LM\XML\seis.xml" xsi:noNamespaceSchemaLocation="seis.xsd">
+<!DOCTYPE datos SYSTEM "seis.dtd">
+
+<datos>
+  <persona numero="1">
+    <nombre>Celia</nombre>
+    <edad>26</edad>
+    <ciudad>Granada</ciudad>
+  </persona>
+  <persona numero="2">
+    <nombre>Isaac</nombre>
+    <edad>26</edad>
+  </persona>
+</datos>

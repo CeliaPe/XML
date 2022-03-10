@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<usuario 
+<usuario
 	xmlns:xsi="C:\Users\Desktop\Celia\LM\XML\cinco.xml"
 	xsi:noNamespaceSchemaLocation="cinco.xsd">
-	<nombre>Celia</nombre>
+	<nombre tipo="simple">Celia</nombre> <!-- simple/compuesto -->
 	<apellido>Pedregosa</apellido>
 	<edad>26</edad>
 	<color>azul</color>
 	<letra>A</letra>
-	<contrasena>123698745</contrasena>
-
+	<contrasena>123698</contrasena>
 </usuario>

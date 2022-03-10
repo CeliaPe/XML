@@ -1,16 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" ?>  
+<?xml version="1.0" encoding="UTF-8" ?>
 
-<xs:schema 
+<xs:schema
 	xmlns:xs="C:\Users\Desktop\Celia\LM\XML\cinco.xsd">
 	<xs:element name="usuario" type="Tusuario"/>
 	<xs:complexType name="Tusuario">
 		<xs:secuence>
-			<xs:element name="nombre" type="Tnombre"/>
+			<xs:element name="nombre" type="Tnombre" default="Celia"/>
+			<xs:attribute name="tipo" type="xs:string" use="required"/> <!-- fixed, default, optional, required -->
 			<xs:element name="apellido" type="Tapellido"/>
 			<xs:element name="edad" type="Tedad"/>
 			<xs:element name="color" type="Tcolor"/>
 			<xs:element name="letra" type="Tletra"/>
-			<xs:element name="contrasena" type="Tconstrasena"/>
+			<xs:element name="contrasena" type="Tconstrasena" fixed="asdf12"/>
 		</xs:secuence>
 	</xs:complexType>
 	<xs:simpleType name="Tnombre">
@@ -33,6 +34,7 @@
 			<xs:enumeration value="verde"/>
 			<xs:enumeration value="amarillo"/>
 			<xs:enumeration value="rojo"/>
+			<!-- <xs:pattern value="[azul|verde|amarillo|rojo]"/> -->
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="Tletra">
