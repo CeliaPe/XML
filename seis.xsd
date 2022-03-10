@@ -1,0 +1,7 @@
+<?xml version= "1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="C:\Users\Usuario\Desktop\Celia\LM\XML\seis.xsd">
+  <xs:element name="datos" type="Tdatos"/> 
+
+    <xs:complexType name="Tdatos">
+      <xs:element name="persona" type="Tpersona">
+    </xs:complexType>
