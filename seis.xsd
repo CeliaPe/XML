@@ -1,7 +1,41 @@
 <?xml version= "1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="C:\Users\Usuario\Desktop\Celia\LM\XML\seis.xsd">
-  <xs:element name="datos" type="Tdatos"/> 
+
+  <xs:element name="datos" type="Tdatos" minOccurs="0" maxOccurs="unbounded"/>
 
     <xs:complexType name="Tdatos">
-      <xs:element name="persona" type="Tpersona">
+      <xs:element name="persona" type="Tpersona"/>
+      <xs:complexType name="Tpersona">
+      <!-- secuence // all // choice -->
+        <xs:secuence>
+          <xs:group ref="datosBasicos"/>
+          <!-- Datos basicos:
+          <xs:element name="nombre" type="Tstring"/>
+          <xs:element name="edad" type="Tedad"/>
+          -->
+          <xs:element name="ciudad" type="Tstring" minOccurs="0"/>
+        </xs:secuence>
+      </xs:complexType>
     </xs:complexType>
+
+    <xs:group name="datosBasicos">
+      <!-- Tambien existe el attributeGroup para agrupar atributos -->
+      <xs:secuence>
+        <xs:element name="nombre" type="Tstring"/>
+        <xs:element name="edad" type="Tedad"/>
+      </xs:secuence>
+    </xs:group>
+
+    <xs:simpleType name="Tstring">
+      <xs:restriction base="xs:string">
+        <xs:whiteSpace value="perserve"/>
+      </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Tedad">
+      <xs:restriction base="xs:integer">
+        <xs:minInclusive value="0"/>
+        <xs:maxInclusive value="130"/>
+      </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
