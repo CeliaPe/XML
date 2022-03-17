@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aeropuerto xmlns:xsi="C:\Users\Usuario\Desktop\Celia\LM\XML\siete.xml"
+       xsi:noNamespaceSchemaLocation="siete.xsd">
+
+<!--
+Aeropuerto - Fecha 17.3.2022
+======================================================================
+| Codigo | Diario | Origen | Destino | H Salida | H Llegada | Estado |
+======================================================================
+|  V22   |   SI   |  NewY  | Chicago |   9:30   |   11:30   |    R   |
+|  V23   |   NO   |  NewY  | Miami   |  10:15   |   11:15   |    C   |
+======================================================================
+-->
+
+<aeropuerto>
+    <fecha>2022-03-17</fecha> <!-- Podría ser un atributo de aeropuerto -->
+    <vuelo codigo="V22" estado="R">
+        <diario/>
+        <origen>NewY</origen>
+        <destino>Chicago</destino>
+        <h_salida>9:30:00</h_salida>
+        <h_llegada>11:30:00</h_llegada>
+    </vuelo>
+    <vuelo codigo="V23" estado="C">
+        <origen>NewY</origen>
+        <destino>Miami</destino>
+        <h_salida>10:15:00</h_salida>
+        <h_llegada>11:15:00</h_llegada>
+    </vuelo>
+</aeropuerto>
+
+<!--
+Restricciones para xsd:
+- No utilizar group ni attributeGroup.
+- vuelo/fecha pueden estar desordenados.
+- codigo único y obligatorio para cada vuelo.
+- estado utilizamos pattern con E(En hora), R(Retrasado), C(Cancelado).
+- Por defecto el estado es E.
+- Podemos tener 0-inf. vuelos.
+- Los datos dentro del vuelo deben estar en ese orden concreto.
+-->
