@@ -1,0 +1,30 @@
+<!-- Group- -->
+<xs:group name="datosTrabajador">
+  <xs:sequence>
+    <xs:element name="nombre" type="Ttexto"/>
+    <xs:element name="apellido" type="Ttexto"/>
+    <xs:element name="baja" minOccurs="0"/>
+    <xs:element name="salario" type="Tsalario"/>
+        <!-- Dento de Tsalario
+
+             base="xs:decimal"
+             minExclusive value=""
+             maxInclusive value=""
+             totalDigits
+             fractionDigits (número de decimales que puede tener)
+        -->
+  </xs:sequence>
+</xs:group>
+
+<!-- ¿Dónde usamos group (datosTrabajador) -->
+
+<xs:complexType name="Templeado">
+  <xs:group ref="datosTrabajador"/>
+</xs:complexType>
+
+<xs:complexType name="Tjefe">
+  <xs:sequence>
+    <xs:group ref="datosTrabajador"/>
+    <xs:element name="clave" type="Tclave"/> <!--Completar-->
+  </xs:sequence>
+</xs:complexType>
