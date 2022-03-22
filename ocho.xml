@@ -1,0 +1,60 @@
+<?xml version= "1.0" encoding="UTF-8"?>
+<empresa xmlns:xsi="C:\Users\PC\Desktop\PdCJ1DAW\LENGUAJE DE MARCAS\XML\XSD\CELDAS.xsd" xsi:noNamespaceSchemaLocation="ocho.xsd">
+
+<empresa>
+  <datosEmpresa>
+    <nombre>ECI</nombre>
+    <nTrabajadores>8</nTrabajadores>
+    <sector>
+      <tecnologia/>
+      <educacion/>
+    </sector>
+  </datosEmpresa>
+
+  <departamentos>
+      <departamento nombre="administracion" codigoDep="ADMIN">
+          <jefe>
+              <nombre>Ana</nombre>
+              <apellido>Peña</apellido>
+              <baja/>
+              <salario>6000</salario>
+              <clave nUsuario="anapea">46322jken2</clave>
+          </jefe>
+
+          <trabajador rango="empleado">
+              <nombre>José</nombre>
+              <apellido>López</apellido>
+              <salario>2000</salario>
+          </trabajador>
+
+          <trabajador rango="empleado">
+              <nombre>Luís</nombre>
+              <apellido>Núñez</apellido>
+              <salario>1800</salario>
+          </trabajador>
+
+          <trabajador rango="empleado">
+              <nombre>Martín</nombre>
+              <apellido>Martín</apellido>
+              <baja/>
+              <salario>1800</salario>
+          </trabajador>
+      </departamento>
+
+      <departamento nombre="informatica" codigoDep="INFOR">
+          <jefe>
+              <nombre>Lucas</nombre>
+              <apellido>Sorda</apellido>
+              <salario>6500</salario>
+              <clave nUsuario="lucsor">84iejd98d3</clave>
+          </jefe>
+
+          <trabajador rango="empleado">
+              <nombre>Elena</nombre>
+              <apellido>Hernández</apellido>
+              <salario>4500</salario>
+          </trabajador>
+      </departamento>
+      
+    </departamentos>
+  </empresa>
